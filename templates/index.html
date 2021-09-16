@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Digital Campus</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static' ,filename= 'img/dclogo.png')}}" rel="icon">
+  <link href="{{ url_for('static' ,filename= 'img/dclogo.png')}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static' ,filename= 'vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static' ,filename='vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static' ,filename= 'vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static' ,filename='vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static' ,filename='vendor/venobox/venobox.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static' ,filename='vendor/owl.carousel/  /owl.carousel.min.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static' ,filename='vendor/aos/aos.css')}}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static' ,filename= 'css/style.css')}}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v2.3.1
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+  
+      <!--<h1 class="logo mr-auto"><a href="index.html">Digital Campus</a></h1>-->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="/" class="logo mr-auto"><img src="{{ url_for('static' ,filename='img/dclogo.png')}}" alt="" class="img-fluid" width="150" height="600"></a>
+  
+      <nav class="nav-menu d-none d-lg-block">
+        
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="drop-down"><a href="#about">About Modules</a>
+            <ul>
+              <li><a href="#about">Students Performance Analytics</a></li>
+              <li><a href="#about1">Teachers Performance Analytics</a></li>
+              <li><a href="#about2">Teachinng-Learning Performance Analytics</a></li>
+              <li><a href="#about3">School Admission Analytics</a></li>
+              <li><a href="#about4">School Operations Analytics</a></li>
+              <li><a href="#about5">School Financial Analytics</a></li>
+            </ul>
+          </li>
+          <li><a href="#services" >Services</a></li>
+          
+          <li><a href="#contact" >Contact</a></li>
+          <li><a href="/" target="_blank">Logout</a></li>
+          
+      </nav><!-- .nav-menu -->
+  
+    
+  
+    </div>
+  </header><!-- End Header -->
+
+
+<section id="hero" class="d-flex align-items-center">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <h1>School Performance Analytics</h1>
+        <h2> Digital Campus is an Application of Data Analytics in Educational Institutions for Analyzing Student Performance!</h2>
+        <div class="d-lg-flex">
+          
+          
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+        <img src="{{ url_for('static' ,filename= 'img/hero-img.png')}}" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+ 
+</section><!-- End Hero -->
+
+<main id="main">
+<br> 
+<br>
+<center>
+
+<a href="/templates/secondpage.html" class ="get-started-btn scrollto">Students Performance Analytics</a>
+<a href="#about" class="get-started-btn scrollto">Teachers Performance Analytics</a>
+<a href="#about" class="get-started-btn scrollto">Teaching-learning Performance Analytics</a>
+<br>
+<br>
+<br>
+<a href="#about" class="get-started-btn scrollto">School Admission Analytics</a>
+<a href="#about" class="get-started-btn scrollto">School Operations Analytics</a>
+<a href="#about" class="get-started-btn scrollto">School Financial Analytics</a></center>
+<br>  
+ 
+<!-- ======= About Us Section ======= -->
+ 
+<section id="about" class="about">
+  <div id="aboutus"  class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="container-fluid" data-aos="fade-up">
+      <h3>Students Performance Analytics</h3>
+<p class="text">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots"> ......</span> <span class="moreText">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
+<button class="read-more-btn">Read More</button>
+<script>
+  const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".text");
+
+readMoreBtn.addEventListener("click", (e) => {
+    text.classList.toggle("show-more");
+    if (readMoreBtn.innerText === "Read More") {
+      readMoreBtn.innerText = "Read Less"
+    } else {
+      readMoreBtn.innerText = "Read More";
+    }
+  });
+</script>
+
+<!-------About SPA Ends -->
+
+<hr>
+<section id="about1" class="about">
+  <div id="aboutus"  class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="container-fluid" data-aos="fade-up">
+      <h3>Teachers Performance Analytics</h3>
+<p class="text">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots"> ......</span> <span class="moreText">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance! </span></p>
+<button class="read-more-btn">Read More</button>
+<script>
+  const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".text");
+
+readMoreBtn.addEventListener("click", (e) => {
+    text.classList.toggle("show-more");
+    if (readMoreBtn.innerText === "Read More") {
+      readMoreBtn.innerText = "Read Less"
+    } else {
+      readMoreBtn.innerText = "Read More";
+    }
+  });
+</script>
+
+<!-------About TPA Ends -->
+
+<hr>
+<section id="about2" class="about">
+  <div id="aboutus"  class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="container-fluid" data-aos="fade-up">
+      <h3>Teaching-Learning Performance Analytics</h3>
+<p class="text">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots"> ......</span> <span class="moreText">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
+<button class="read-more-btn">Read More</button>
+<script>
+const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".text");
+
+readMoreBtn.addEventListener("click", (e) => {
+    text.classList.toggle("show-more");
+    if (readMoreBtn.innerText === "Read More") {
+      readMoreBtn.innerText = "Read Less"
+    } else {
+      readMoreBtn.innerText = "Read More";
+    }
+  });
+</script> 
+
+<!-------About TLPA Ends -->
+
+<hr>
+<section id="about3" class="about">
+  <div id="aboutus"  class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="container-fluid" data-aos="fade-up">
+      <h3>School Admission Analytics</h3>
+<p class="text">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots"> ......</span> <span class="moreText">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
+<button class="read-more-btn">Read More</button>
+<script>
+  const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".text");
+
+readMoreBtn.addEventListener("click", (e) => {
+    text.classList.toggle("show-more");
+    if (readMoreBtn.innerText === "Read More") {
+      readMoreBtn.innerText = "Read Less"
+    } else {
+      readMoreBtn.innerText = "Read More";
+    }
+  });
+</script>
+
+<!-------About SPA Ends -->
+
+<hr>
+<section id="about4" class="about">
+  <div id="aboutus"  class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="container-fluid" data-aos="fade-up">
+      <h3>School Operations Analytics</h3>
+<p class="text">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots"> ......</span> <span class="moreText">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
+<button class="read-more-btn">Read More</button>
+<script>
+  const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".text");
+
+readMoreBtn.addEventListener("click", (e) => {
+    text.classList.toggle("show-more");
+    if (readMoreBtn.innerText === "Read More") {
+      readMoreBtn.innerText = "Read Less"
+    } else {
+      readMoreBtn.innerText = "Read More";
+    }
+  });
+</script>
+
+<!-------About SPA Ends -->
+
+<hr>
+<section id="about5" class="about">
+  <div id="aboutus"  class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="container-fluid" data-aos="fade-up">
+      <h3>School Financial Analytics</h3>
+<p class="text">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots"> ......</span> <span class="moreText">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
+<button class="read-more-btn">Read More</button>
+<script>
+  const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".text");
+
+readMoreBtn.addEventListener("click", (e) => {
+    text.classList.toggle("show-more");
+    if (readMoreBtn.innerText === "Read More") {
+      readMoreBtn.innerText = "Read Less"
+    } else {
+      readMoreBtn.innerText = "Read More";
+    }
+  });
+</script>
+  
+</section><!-- End About Us Section -->
+<!-- ======= Cta Section ======= -->
+<section id="cta" class="cta">
+    <div class="container" data-aos="zoom-in">
+  
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-left">
+          <h3>Let’s discuss ideas!</h3>
+          <p> Our team continues to build on the collective experience of the core team of over 300 person years characterized by the strong foundations of sincerity, transparency and ethics.</p>
+        </div>
+        
+  
+    </div>
+  </section><!-- End Cta Section -->
+
+ <!-- ======= Services Section ======= -->
+ <section id="services" class="services section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Services</h2>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icon-box">
+          <div class="icon"><i class="bx bxl-dribbble"></i></div>
+          <h4><a href="">e-learning</a></h4>
+          <p>Providing cloud-based pervasive learning environment for any time anywhere learning through various learning resources.
+
+        </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icon-box">
+          <div class="icon"><i class="bx bx-file"></i></div>
+          <h4><a href="">Integration SErvices</a></h4>
+          <p>We strive to live up to our promise of providing a single point solution by integrating your disparate systems into a unified solution.
+
+        </p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+        <div class="icon-box">
+          <div class="icon"><i class="bx bx-tachometer"></i></div>
+          <h4><a href="">DC Netra Support</a></h4>
+          <p>Fulfill your objectives of having a comprehensive school ERP with our superior support services.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+        <div class="icon-box">
+          <div class="icon"><i class="bx bx-layer"></i></div>
+          <h4><a href="">Custom Development</a></h4>
+          <p>Whether it is a model of innovation in business or technology based quest to attain leadership in business, leave it to us to transform your dream into a practical technology based solution.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>If you have any questions or queries our expert support team will always be happy to help. Feel free to contact us by telephone or email and we will be sure to get back to you as soon as possible.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>77/1/2 Ved Bhavan, Kothrud, Pune- 411 038, INDIA</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>sales@ethdc.in</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 94235 19568</p>
+                 <p>+91 87657 68989</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/place/Ved+Bhavan,+Mumbai+Pune+Bypass+Rd,+Bhusari+Colony,+Kothrud,+Pune,+Maharashtra+411038/@18.506858,73.7858841,17z/data=!3m1!4b1!4m5!3m4!1s0x3bc2be4eb2d028b7:0x46716d831ecebb21!8m2!3d18.506858!4d73.7880728" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action= "/contact" method="post" role="form" class="email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              
+              <div class="text-center"><button type="submit" class="btn btn-primary">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static' ,filename= 'vendor/jquery/jquery.min.js')}}"></script>
+  <script src="  /vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ url_for('static' ,filename= 'vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+  <script src="{{ url_for('static' ,filename= 'vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{ url_for('static' ,filename= 'vendor/waypoints/jquery.waypoints.min.js')}}"></script>
+  <script src="{{ url_for('static' ,filename= 'vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{ url_for('static' ,filename= 'vendor/venobox/venobox.min.js')}}"></script>
+  <script src="{{ url_for('static' ,filename= 'vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+  <script src="{{ url_for('static' ,filename= 'vendor/aos/aos.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static' ,filename= 'js/main.js')}}"></script>
+
+</body>
+
+<!-- ======= Footer ======= -->
+  
+
+<div class="footer-top" id= "footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 footer-contact">
+        <h3>ETHDC</h3>
+        <p>
+          Ved Bhavan, <br>
+          Bhusari Colony,<br>
+          Kothrud,Pune,Maharashtra <br><br>
+          <strong>Phone:</strong>+91 94235 19568<br>
+          <strong>Email:</strong> sales@ethdc.in<br>
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+       
+          
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Our Social Networks</h4>
+        <p>To get every updates and to know more,follow us on social media</p>
+        <div class="social-links mt-3">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container footer-bottom clearfix">
+  <div class="copyright">
+    &copy; <strong><span></span></strong>
+  </div>
+  <div class="credits">
+    <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+    <a href="https://bootstrapmade.com/"></a>
+  </div>
+</div>
+</footer><!-- End Footer -->

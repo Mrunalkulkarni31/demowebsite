@@ -1,0 +1,34 @@
+{% extends "layout.html" %} 
+{% block title %}Secondpage{% endblock %}
+{% block body %} 
+
+<div id = "secondpage">
+<form action ="/secondpage" method="post">
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Students Performance Analytics</h1>
+          <h2> Digital Campus is an Application of Data Analytics in Educational Institutions for Analyzing Student Performance!</h2>
+          <div class="d-lg-flex">
+            
+            
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="{{ url_for('static' ,filename= 'img/hero-img.png')}}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+   
+  </section><!-- End Hero -->
+
+  <main id="main">
+<br> 
+<br>
+
+
+    </form>
+      {% endblock %}

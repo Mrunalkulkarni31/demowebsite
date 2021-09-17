@@ -28,6 +28,10 @@ def home():
 def StudentsLogin():
     return render_template('studlogin.html')
 
+@app.route("/secondpage")
+def secondpage():
+    return render_template('secondpage.html')
+
 
 
 class Parentsdata(db.Model):
@@ -36,6 +40,7 @@ class Parentsdata(db.Model):
     
 @app.route("/parents_login" , methods=['GET', 'POST'])
 def Parents_Login():
+    msg = "Logged in!"
     def login():
     # Output message if something goes wrong...
      
@@ -45,6 +50,7 @@ def Parents_Login():
         # Create variables for easy access
         username = request.form['Username']
         password = request.form['Password']
+        print(username,password)
          # Check if account exists using MySQL
         cursor = MySQL.connect.cursor()
         cursor.execute('SELECT * FROM parentsdata WHERE username = %s AND password = %s', (username, password,))
@@ -62,7 +68,9 @@ def Parents_Login():
             # Account doesnt exist or username/password incorrect
             msg = 'Incorrect username/password!'
     # Show the login form with message (if any)
-    return render_template('parentlog1.html')
+    
+     return render_template('parentlog1.html')
+    
 
 @app.route("/teachers_login")
 def Teachers_Login():
@@ -99,4 +107,5 @@ def Contact():
 
 
 app.run(debug=True)
+
 

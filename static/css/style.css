@@ -392,10 +392,106 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   cursor: pointer;
 }
+
 .text.show-more .moreText {
   display: inline;
 }
 .text.show-more .dots {
+  display: none;
+}
+.moreText1 {
+  display: none;
+}
+.read-more-btn1 {
+  padding: 5px 10px;
+  background-color: rgb(149, 170, 197);
+  color: rgb(53, 49, 49);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.text1.show-more1 .moreText1 {
+  display: inline;
+}
+.text1.show-more1 .dots1 {
+  display: none;
+}
+.moreText2 {
+  display: none;
+}
+.read-more-btn2 {
+  padding: 5px 10px;
+  background-color: rgb(149, 170, 197);
+  color: rgb(53, 49, 49);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.text2.show-more2 .moreText2 {
+  display: inline;
+}
+.text2.show-more2 .dots2 {
+  display: none;
+}
+.moreText3 {
+  display: none;
+}
+.read-more-btn3 {
+  padding: 5px 10px;
+  background-color: rgb(149, 170, 197);
+  color: rgb(53, 49, 49);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.text3.show-more3 .moreText3 {
+  display: inline;
+}
+.text3.show-more3 .dots3 {
+  display: none;
+}
+.moreText4{
+  display: none;
+}
+.read-more-btn4 {
+  padding: 5px 10px;
+  background-color: rgb(149, 170, 197);
+  color: rgb(53, 49, 49);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.text4.show-more4 .moreText4 {
+  display: inline;
+}
+.text4.show-more4 .dots4 {
+  display: none;
+}
+.moreText5 {
+  display: none;
+}
+.read-more-btn5 {
+  padding: 5px 10px;
+  background-color: rgb(149, 170, 197);
+  color: rgb(53, 49, 49);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.text5.show-more5 .moreText5 {
+  display: inline;
+}
+.text5.show-more5 .dots5 {
   display: none;
 }
 /*--------------------------------------------------------------

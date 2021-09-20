@@ -5,10 +5,18 @@ import sqlalchemy
 from flask import Flask
 from flask_mysqldb import MySQL
 import re
+import pandas as pd
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+
+import plotly.graph_objects as go
+
 
 
 mysql = MySQL()
 app = Flask(__name__)
+db = SQLAlchemy(app)
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/ethdatabase'
@@ -30,13 +38,63 @@ def StudentsLogin():
 
 @app.route("/secondpage")
 def secondpage():
-    return render_template('secondpage.html')
+ return render_template('secondpage.html')
+
+@app.route("/visualization")
+def visualisation():
+    
+    data = pd.read_csv(r"C:\\Users\\Hp\AppData\\Local\\Programs\\Python\\Python39\\Subject wise data.csv")
+    data.columns
 
 
 
-class Parentsdata(db.Model):
-    Username = db.Column(db.String(80), primary_key=True)
-    Password = db.Column(db.String(20), nullable=False)
+    y1 = data.loc[0,"UT_1_CA"]
+    y2 = data.loc[0,"Sem_1_CA"]
+    y3 = data.loc[0,"UT_2_CA"]
+    y4 = data.loc[0,"Sem_2_CA"]
+    y_values = [y1,y2,y3,y4]
+
+    x1= data.loc[0,"UT_1_AVG"]
+    x2 = data.loc[0,"Sem_1_AVG"]
+    x3 = data.loc[0,"UT_2_AVG"]
+    x4 = data.loc[0,"Sem_2_AVG"]
+    x_values = [x1,x2,x3,x4]
+
+    x = ['UT_1','Sem_1','UT_2','Sem_2']
+
+    plt.fill_between(x,x_values,alpha = 0.5,color="skyblue",edgecolor='black',label="Individual Performance")
+    plt.fill_between(x,y_values,alpha = 0.2,color="red",edgecolor='black',label="Average Class Performance")
+    plt.grid(True)
+    plt.legend(loc=4)
+    plt.title("Performance of Rina")
+    plt.ylabel("Performance")
+    plt.show()
+
+
+    a1 = data.loc[19,"UT_1_CA"]
+    a2 = data.loc[19,"Sem_1_CA"]
+    a3 = data.loc[19,"UT_2_CA"]
+    a4 = data.loc[19,"Sem_2_CA"]
+    a_values = [a1,a2,a3,a4]
+
+    b1= data.loc[19,"UT_1_AVG"]
+    b2 = data.loc[19,"Sem_1_AVG"]
+    b3 = data.loc[19,"UT_2_AVG"]
+    b4 = data.loc[19,"Sem_2_AVG"]
+    b_values = [b1,b2,b3,b4]
+
+    plt.fill_between(x,a_values,alpha = 0.5,color="skyblue",edgecolor='black',label="Individual Performance")
+    plt.fill_between(x,b_values,alpha = 0.3,color="red",edgecolor='black',label="Average Class Performance")
+    plt.legend(loc=4)
+    plt.title("Performance of Nikhil")
+    plt.ylabel("Performance")
+    plt.show()
+
+    return render_template('index.html')
+
+
+
+
     
 @app.route("/parents_login" , methods=['GET', 'POST'])
 def Parents_Login():
@@ -46,7 +104,7 @@ def Parents_Login():
      
     
        # Check if "username" and "password" POST requests exist (user submitted form)
-     if request.method == 'POST' and 'Username' in request.form and 'Password' in request.form:
+     if request.method == 'POST':
         # Create variables for easy access
         username = request.form['Username']
         password = request.form['Password']
@@ -69,12 +127,34 @@ def Parents_Login():
             msg = 'Incorrect username/password!'
     # Show the login form with message (if any)
     
-     return render_template('parentlog1.html')
     
+    return render_template('parentlog1.html')
+# Username
+# Teacher_Name
+# Gender
+# Nationality
+# Education
+# Teaching_Qualification
+# Experience_in_the_field
+# Passwor
 
-@app.route("/teachers_login")
-def Teachers_Login():
-    return render_template('teacherlog.html')
+class teachers_dataset(db.Model):
+    
+    Username = db.Column(db.String(50), primary_key=True)
+    Teacher_Name = db.Column(db.String(80), nullable=False)
+    Gender = db.Column(db.String(80), nullable=False)
+    Nationality  = db.Column(db.String(80), nullable=False)
+    Education = db.Column(db.String(80), nullable=False)
+    Teaching_Qualification = db.Column(db.String(80), nullable=False)
+    Experience_in_the_field = db.Column(db.String(80), nullable=False)
+    Password = db.Column(db.String(80), nullable=False)
+
+    @app.route("/teachers_login" ,methods = ['GET','POST'])
+    def Teachers_Login():
+        username1 = request.form.get('username1')
+        password1 = request.form.get('password1')
+        return "the username is {} and password is {}".format(username1,password1)
+
 
 @app.route("/administration_login")
 def Administration_Login():
@@ -107,5 +187,4 @@ def Contact():
 
 
 app.run(debug=True)
-
 

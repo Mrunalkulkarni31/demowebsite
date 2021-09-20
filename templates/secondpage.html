@@ -2,33 +2,124 @@
 {% block title %}Secondpage{% endblock %}
 {% block body %} 
 
-<div id = "secondpage">
-<form action ="/secondpage" method="post">
+<!-- =======<div id = "secondpage">
+<form action ="/secondpage" method="post">======= -->
 <!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center">
+<style>
+#hero1 {
+  width: 100%;
+  height: 80vh;
+  background: #87a3f0;
+}
+
+#hero1 .container {
+  padding-top: 72px;
+}
+
+#hero1 h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: rgb(15, 10, 10);
+  position : relative;
+  margin-top: 420px;
   
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Students Performance Analytics</h1>
-          <h2> Digital Campus is an Application of Data Analytics in Educational Institutions for Analyzing Student Performance!</h2>
-          <div class="d-lg-flex">
-            
-            
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="{{ url_for('static' ,filename= 'img/hero-img.png')}}" class="img-fluid animated" alt="">
-        </div>
+}
+
+#hero1 h2 {
+  color: rgb(15, 10, 10);
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+#hero1 .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  margin-left: 600px;
+  position: relative;
+  bottom: 320px;
+}
+</style>
+
+<section id="hero1" class="d-flex align-items-center">
+
+  <div class="container">
+    
+      <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos1="fade-up" data-aos-delay1="200">
+        <h1>Student Performance Analytics</h1>
+        <h2> Digital Campus is an Application of Data Analytics in Educational Institutions for Analyzing Student Performance!</h2>
+        <div class="d-lg-flex">
+      </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2" data-aos1="zoom-in" data-aos-delay1="200">
+        <img src="/static/img/hero-img.png" class="img-fluid animated" alt="">
       </div>
     </div>
-   
-  </section><!-- End Hero -->
+  
+ 
+</section>
+<section id="about6" class="about6">
+  <div class="container" data-aos6="fade-up">
 
-  <main id="main">
-<br> 
-<br>
+    <div class="section-title6">
+      <h2>Students Performance Analytics</h2>
+    </div>
+     
+    <p class="text6">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</p>
 
+<style>
+  .section {
+  padding: 60px 0;
+  overflow: hidden;
+}
 
-    </form>
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.section-title6 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title6.h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+.section-title6 h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title6 h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title6.text6 {
+  margin-bottom: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif,bold ;
+}
+</style>
+  
+</section>
+
+  
       {% endblock %}

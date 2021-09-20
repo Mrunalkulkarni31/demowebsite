@@ -1,9 +1,3 @@
-/**
-* Template Name: Arsha - v2.3.1
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -391,6 +385,8 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   font-size: 15px;
   cursor: pointer;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 .text.show-more .moreText {
@@ -634,6 +630,32 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-10px);
   }
 }
+#hero {
+  width: 100%;
+  height: 80vh;
+  background: #87a3f0;
+}
+
+#hero .container {
+  padding-top: 72px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: rgb(15, 10, 10);
+}
+
+#hero h2 {
+  color: rgb(15, 10, 10);
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+
+
 /*--------------------------------------------------------------
 # login section
 --------------------------------------------------------------*/
@@ -712,32 +734,54 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
 
-/*--------------------------------------------------------------
-# Cliens
---------------------------------------------------------------*/
-.cliens {
-  padding: 12px 0;
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.section-title6 {
   text-align: center;
+  padding-bottom: 30px;
 }
 
-.cliens img {
-  max-width: 45%;
-  transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 15px 0;
-  filter: grayscale(100);
+.section-title6 h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
 }
 
-.cliens img:hover {
-  filter: none;
-  transform: scale(1.1);
+.section-title6 h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
 }
 
-@media (max-width: 768px) {
-  .cliens img {
-    max-width: 40%;
-  }
+.section-title6 h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title6 p {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -797,190 +841,34 @@ section {
   color: #fff;
   text-decoration: none;
 }
+/* hfgggsdg */
 
-/*--------------------------------------------------------------
-# Why Us
---------------------------------------------------------------*/
-.why-us .content {
-  padding: 60px 100px 0 100px;
+.about6 .content h3 {
+  font-weight: 600;
+  font-size: 26px;
 }
 
-.why-us .content h3 {
-  font-weight: 400;
-  font-size: 34px;
-  color: #37517e;
-}
-
-.why-us .content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 5px;
-}
-
-.why-us .content p {
-  font-size: 15px;
-  color: #848484;
-}
-
-.why-us .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.why-us .accordion-list {
-  padding: 0 100px 60px 100px;
-}
-
-.why-us .accordion-list ul {
-  padding: 0;
+.about6 .content ul {
   list-style: none;
+  padding: 0;
 }
 
-.why-us .accordion-list li + li {
-  margin-top: 15px;
-}
-
-.why-us .accordion-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-}
-
-.why-us .accordion-list a {
-  display: block;
+.about6 .content ul li {
+  padding-left: 28px;
   position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding-right: 30px;
-  outline: none;
 }
 
-.why-us .accordion-list span {
-  color: #47b2e4;
-  font-weight: 600;
-  font-size: 18px;
-  padding-right: 10px;
+.about6 .content ul li + li {
+  margin-top: 10px;
 }
 
-.why-us .accordion-list i {
-  font-size: 24px;
+.about6 .content ul i {
   position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.why-us .accordion-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
-.why-us .accordion-list .icon-show {
-  display: none;
-}
-
-.why-us .accordion-list a.collapsed {
-  color: #343a40;
-}
-
-.why-us .accordion-list a.collapsed:hover {
-  color: #47b2e4;
-}
-
-.why-us .accordion-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
-.why-us .accordion-list a.collapsed .icon-close {
-  display: none;
-}
-
-@media (max-width: 1024px) {
-  .why-us .content, .why-us .accordion-list {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 992px) {
-  .why-us .img {
-    min-height: 400px;
-  }
-  .why-us .content {
-    padding-top: 30px;
-  }
-  .why-us .accordion-list {
-    padding-bottom: 30px;
-  }
-}
-
-@media (max-width: 575px) {
-  .why-us .img {
-    min-height: 200px;
-  }
-}
-
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-.skills .content h3 {
-  font-weight: 700;
-  font-size: 32px;
-  color: #37517e;
-  font-family: "Poppins", sans-serif;
-}
-
-.skills .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skills .content ul li {
-  padding-bottom: 10px;
-}
-
-.skills .content ul i {
+  left: 0;
+  top: 2px;
   font-size: 20px;
-  padding-right: 4px;
   color: #47b2e4;
-}
-
-.skills .content p:last-child {
-  margin-bottom: 0;
-}
-
-.skills .progress {
-  height: 50px;
-  display: block;
-  background: none;
-}
-
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #37517e;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #e8edf5;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: #4668a2;
+  line-height: 1;
 }
 
 /*--------------------------------------------------------------

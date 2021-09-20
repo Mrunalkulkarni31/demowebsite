@@ -60,7 +60,8 @@
           <li><a href="#services" >Services</a></li>
           
           <li><a href="#contact" >Contact</a></li>
-          <li><a href="/" target="_blank">Logout</a></li>
+          <li><a href="{{url_for('visualisation')}}" >Visualisations</a></li>
+          
           
       </nav><!-- .nav-menu -->
   
@@ -78,9 +79,7 @@
         <h1>School Performance Analytics</h1>
         <h2> Digital Campus is an Application of Data Analytics in Educational Institutions for Analyzing Student Performance!</h2>
         <div class="d-lg-flex">
-          
-          
-        </div>
+      </div>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
         <img src="{{ url_for('static' ,filename= 'img/hero-img.png')}}" class="img-fluid animated" alt="">
@@ -91,20 +90,7 @@
 </section><!-- End Hero -->
 
 <main id="main">
-<br> 
-<br>
-<center>
 
-<a href="/templates/secondpage.html" class ="get-started-btn scrollto">Students Performance Analytics</a>
-<a href="#about" class="get-started-btn scrollto">Teachers Performance Analytics</a>
-<a href="#about" class="get-started-btn scrollto">Teaching-learning Performance Analytics</a>
-<br>
-<br>
-<br>
-<a href="#about" class="get-started-btn scrollto">School Admission Analytics</a>
-<a href="#about" class="get-started-btn scrollto">School Operations Analytics</a>
-<a href="#about" class="get-started-btn scrollto">School Financial Analytics</a></center>
-<br>  
  
 <!-- ======= About Us Section ======= -->
  
@@ -112,7 +98,7 @@
   <div id="aboutus"  class="container" data-aos="fade-up">
     <div class="row">
       <div class="container-fluid" data-aos="fade-up">
-      <h3>Students Performance Analytics</h3>
+        <a href="{{url_for('secondpage')}}" class ="section-title"><h3>Students Performance Analytics</h3></a>
 <p class="text">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots"> ......</span> <span class="moreText">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
 <button class="read-more-btn">Read More</button>
 <script>
@@ -136,8 +122,8 @@ readMoreBtn.addEventListener("click", (e) => {
   <div id="aboutus1"  class="container" data-aos="fade-up">
     <div class="row">
       <div class="container-fluid" data-aos="fade-up">
-      <h3>Teachers Performance Analytics</h3>
-<p class="text1">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots1"> ......</span> <span class="moreText1">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance! </span></p>
+        <a href="/" class ="section-title"><h3>Teachers Performance Analytics</h3></a>
+<p class="text1">A teacher is one of the most important entities while considering school analytics which has a direct impact on the student performance. Thus, better the teacher’s performance, better is the school and student performance and analytics of this performance will help gain useful insights for improvisation from the data.,<span class="dots1"> ......</span> <span class="moreText1">The performance standards have been identified such as Designing learning experiences for children, knowledge and understanding of subject matter, strategies for facilitating learning, Interpersonal relationship, professional development, school development and teacher attendance. If the teacher performs task in an innovative way and makes extra efforts for improving student performance, she/he can be rated as beyond the expected standard. Self- assessment by the teacher should be done at least twice in year, one ending first quarter and second ending third quarter.</span></p>
 <button class="read-more-btn1">Read More</button>
 <script>
   const readMoreBtn1 = document.querySelector(".read-more-btn1");
@@ -160,8 +146,11 @@ readMoreBtn1.addEventListener("click", (e) => {
   <div id="aboutus2"  class="container" data-aos="fade-up">
     <div class="row">
       <div class="container-fluid" data-aos="fade-up">
-      <h3>Teaching-Learning Performance Analytics</h3>
-<p class="text2">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots2"> ......</span> <span class="moreText2">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
+        <a href="/" class ="section-title"><h3>Teaching-Learning Performance Analytics</h3></a>
+<p class="text2"> <br>Teaching Analytics is Whhat refers to the methods and digital tools to help teachers analyze and improve the educational designs prior to the delivery. Furthermore, more recent developments on Teaching analytics also support analysis of how the teacher delivers the educational designs<span class="dots2"> ......</span> <span class="moreText2">and Learning Analytics Which refer to the methods and digital tools that allow the measurement, collection, analysis and reporting of data about learners and their context for purposes of understanding and optimizing learning and the environments in which it occurs.
+  The potential of teaching analytics to analyze the educational designs in the constituent elements (learning and assessments activities and educational resources/tools) and the interrelations between the elements.
+  The potential learning analytics to measure, collect, analyze and report on learner’s educational data and the learning context that they are generated aiming to improve the learning conditions for individual learners or group of learners.
+  </span></p>
 <button class="read-more-btn2">Read More</button>
 <script>
 const readMoreBtn2 = document.querySelector(".read-more-btn2");
@@ -184,8 +173,8 @@ readMoreBtn2.addEventListener("click", (e) => {
   <div id="aboutus3"  class="container" data-aos="fade-up">
     <div class="row">
       <div class="container-fluid" data-aos="fade-up">
-      <h3>School Admission Analytics</h3>
-<p class="text3">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots3"> ......</span> <span class="moreText3">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
+        <a href="/" class ="section-title"><h3>School Admission Analytics</h3></a>
+<p class="text3"> The functioning of a school depends upon the fees collected from the students which in turn depends upon the number of students seeking admission in the school. Thus, analytics on this admission process of a school will help us gain hidden information about factors which ,<span class="dots3"> ......</span> <span class="moreText3">will help in optimization of this process. This will not only benefit the school management but also the students, teachers and other stakeholders of the school.</span></p>
 <button class="read-more-btn3">Read More</button>
 <script>
   const readMoreBtn3 = document.querySelector(".read-more-btn3");
@@ -208,8 +197,8 @@ readMoreBtn3.addEventListener("click", (e) => {
   <div id="aboutus4"  class="container" data-aos="fade-up">
     <div class="row">
       <div class="container-fluid" data-aos="fade-up">
-      <h3>School Operations Analytics</h3>
-<p class="text4">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots4"> ......</span> <span class="moreText4">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
+        <a href="/" class ="section-title"><h3>School Operations Analytics</h3></a>
+<p class="text4">This module deals with the analytics based upon school operations such as student and staff enrolment, student and staff attendance, etc. ,<span class="dots4"> ......</span> <span class="moreText4">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
 <button class="read-more-btn4">Read More</button>
 <script>
   const readMoreBtn4 = document.querySelector(".read-more-btn4");
@@ -232,8 +221,9 @@ readMoreBtn4.addEventListener("click", (e) => {
   <div id="aboutus5"  class="container" data-aos="fade-up">
     <div class="row">
       <div class="container-fluid" data-aos="fade-up">
-      <h3>School Financial Analytics</h3>
-<p class="text5">Students are the main assets for various schools, colleges and universities. Students play an important role in the academic as well as none academic overall performance of the institution,<span class="dots5"> ......</span> <span class="moreText5">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
+        <a href="/" class ="section-title"><h3>School Financial Analytics</h3></a>
+<p class="text5"> A school’s income is majorly based upon the fees collected from the students but some of the income is also be generated from donations, late fee charges, rents etc. A proper analysis of this will help the school management take proper decisions and optimize the process.
+  ,<span class="dots5"> ......</span> <span class="moreText5">The level of achievement of students and indirectly of school can be measured and tested through examination, assessments and other forms of measurements. However, academic performance achievement varies as different kinds of students may have different levels of performance. The student academic performance is usually stored in the student management system in different formats such as files, documents, records, images and other formats. This useful information could be used to predict the students’ overall performance!</span></p>
 <button class="read-more-btn5">Read More</button>
 <script>
   const readMoreBtn5 = document.querySelector(".read-more-btn5");
@@ -287,7 +277,7 @@ readMoreBtn5.addEventListener("click", (e) => {
       <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
         <div class="icon-box">
           <div class="icon"><i class="bx bx-file"></i></div>
-          <h4><a href="">Integration SErvices</a></h4>
+          <h4><a href="">Integration Services</a></h4>
           <p>We strive to live up to our promise of providing a single point solution by integrating your disparate systems into a unified solution.
 
         </p>
